@@ -10,4 +10,20 @@ create table if not exists car (
   primary key (id)
 );
 
+/*CREATE TABLE  if not exists `fincity`.`user` (
+  `id` INT NOT NULL,
+  `user_name` VARCHAR(45) NULL,
+  `password` VARCHAR(45) NULL,
+  `active` VARCHAR(45) NULL,
+  `roles` VARCHAR(45) NULL);*/
+
+
+CREATE TABLE if not exists `fincity`.`user` (
+  `id` INT NOT NULL,
+  `user_name` VARCHAR(45) NULL,
+  `password` VARCHAR(45) NULL,
+  `active` TINYINT NULL,
+  `roles` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
+
 

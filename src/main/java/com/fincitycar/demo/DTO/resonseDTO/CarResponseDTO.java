@@ -1,13 +1,18 @@
-package com.fincitycar.demo.DTO.requestDTO;
+package com.fincitycar.demo.DTO.resonseDTO;
+
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fincitycar.demo.model.Car;
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Data
-public class AddCarDTO {
+public class CarResponseDTO {
+
+
+    @JsonProperty("id")
+    Long id;
 
     @JsonProperty("name")
     String name;

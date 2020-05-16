@@ -1,14 +1,2 @@
-insert into car (
-  car_name,
-  manufacture_name,
-  model,
-  manufacturing_year,
-  color
-)
-values (
-  'i20',
-  'Chevrolet',
-  'SEDAN',
-   2020,
-   'Blue'
-);
+insert ignore into user(id,user_name,password,active,roles) values(1,"user","pass",true,"ROLE_USER");
+insert ignore into user(id,user_name,password,active,roles  ) values(2,"admin","pass",true,"ROLE_ADMIN");

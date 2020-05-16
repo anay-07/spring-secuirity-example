@@ -1,10 +1,13 @@
 package com.fincitycar.demo.model;
 
 
+import lombok.Data;
+
 import javax.persistence.*;
 
 @Entity(name = "car")
 @Table(name = "car")
+@Data
 public class Car {
 
     @Id
@@ -12,7 +15,7 @@ public class Car {
     @Column(name= "id")
     protected Long id;
 
-    @Column(name = "name")
+    @Column(name = "car_name")
     String name;
 
     @Column(name = "manufacture_name")
@@ -27,5 +30,13 @@ public class Car {
     @Column(name = "color")
     String color;
 
+    public Car(){}
 
+    public Car(String name, String manufactureName, String model, Long manufacturingYear, String color) {
+        this.name = name;
+        this.manufactureName = manufactureName;
+        this.model = model;
+        this.manufacturingYear = manufacturingYear;
+        this.color = color;
+    }
 }
